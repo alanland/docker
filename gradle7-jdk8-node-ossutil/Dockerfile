@@ -10,6 +10,6 @@ RUN apt-get update -yq \
     && curl -sL https://deb.nodesource.com/setup_12.x | bash \
     && apt-get install nodejs yarn -yq \
     && curl --output /usr/local/bin/ossutil "https://ttx-download.oss-cn-hangzhou.aliyuncs.com/aliyun/ossutil/ossutil64" \
-    && chmod +x /usr/local/bin/ossutil
+    && chmod +x /usr/local/bin/ossutil \
     && echo "Clean cache" \
     && rm -rf /var/lib/apt/lists/*
